@@ -1,5 +1,10 @@
 # vue-ssr-quiz
 
+## Run db
+```
+yarn db
+```
+
 ## Project setup
 ```
 yarn install
