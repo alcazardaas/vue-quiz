@@ -6,7 +6,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import FormQuestions from './components/FormQuestions.vue';
-import HelloWorld from './components/HelloWorld.vue';
 
 export default defineComponent({
   name: 'App',
@@ -17,6 +16,10 @@ export default defineComponent({
 </script>
 
 <style lang="less">
+html {
+  background: #ccc;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

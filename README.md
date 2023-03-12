@@ -1,13 +1,16 @@
 # vue-ssr-quiz
 
-## Run db
-```
-yarn db
-```
-
 ## Project setup
 ```
 yarn install
+```
+
+## Run db - JSON Server
+```
+yarn db
+```
+```
+Added a 2 second delay to be able to check loading functionality 
 ```
 
 ### Compiles and hot-reloads for development
