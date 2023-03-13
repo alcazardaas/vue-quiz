@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(question, index) in questions" :key="question.id">
+    <div class="question-container" v-for="(question, index) in questions" :key="question.id">
       <p>{{ question.question }}</p>
       <div v-for="(answer, answerIndex) in question.answers" :key="answerIndex">
         <input type="radio" :id="'answer-' + index + '-' + answerIndex" :name="'answer-' + index" :value="answer.answer"
@@ -69,3 +69,57 @@ export default {
   },
 }
 </script>
+
+<style lang="less">
+.question-container {
+  background: white;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+
+  div {
+    display: flex;
+    padding-left: 24%;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 40%;
+    }
+
+    input[type="radio"] {
+      appearance: none;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 0.5em;
+      transition: all 0.2s ease-in-out;
+    }
+
+    label {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:checked {
+      border-color: #0077cc;
+      background-color: #0077cc;
+    }
+
+    input[type="radio"]:checked+label {
+      color: #0092FF;
+    }
+  }
+}
+
+button[type="submit"] {
+  background-color: #0092FF;
+  margin: 2em 0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+</style>

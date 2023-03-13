@@ -1,16 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <!-- <parallax-background /> -->
   <form-questions/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import FormQuestions from './components/FormQuestions.vue';
+import ParallaxBackground from './components/ParallaxBackground.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    FormQuestions
+    FormQuestions,
+    // ParallaxBackground
   }
 });
 </script>
@@ -25,7 +28,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #0012FF;
+  margin: 4em 1em 0em 1em;
 }
 </style>

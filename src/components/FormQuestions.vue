@@ -1,6 +1,6 @@
 <template>
   <div>
-    <loader-component v-if="questions.length === 0" isCentered="true"/>
+    <loader-component v-if="questions.length === 0" :isCentered='true'/>
     <form v-else>
       <question-template :questions="questions" />
     </form>
