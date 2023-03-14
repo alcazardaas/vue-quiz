@@ -77,6 +77,14 @@ export default {
   padding: 1em;
   margin: 1em 0;
 
+  @media screen and (min-width: 768px) {
+    margin: 1em 10em;
+  } 
+
+  @media screen and (min-width: 1440px) {
+    margin: 1em 25em;
+  } 
+
   div {
     display: flex;
     padding-left: 24%;
